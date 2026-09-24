@@ -1,0 +1,18 @@
+# secrets
+.env
+
+# uv / virtualenv
+.venv/
+venv/
+uv.lock
+
+# python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# optional LLM cross-check cache
+outputs/llm_rates_*.json
+
+# pytest
+.pytest_cache/

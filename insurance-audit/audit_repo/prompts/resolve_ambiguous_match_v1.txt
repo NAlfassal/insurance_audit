@@ -1,0 +1,49 @@
+You are resolving a billing description to exactly one contracted service.
+
+Context you need in order to judge this correctly:
+- The description comes from a hospital billing system. It is compressed
+  clinical shorthand, word-order is not stable, and it may carry a trailing
+  supplier code such as "/SA-8184" that means nothing here.
+- The candidate list below is the full set of services in the contract. The
+  correct answer is either exactly one of them, or none of them.
+- Lexical similarity has already been computed and was not decisive, which is
+  why this case reached you. Do not re-rank on surface similarity; judge on
+  clinical meaning.
+
+Corroborating evidence, use it:
+- billed_unit_basis must be consistent with the candidate's unit_basis. A
+  service contracted "per night of occupancy" billed "per hour" is a signal the
+  match is wrong, not a detail to smooth over.
+- billed_unit_price_cents should be at, or a plausible adjustment away from, the
+  candidate's rate_cents. The contract permits uplifts of +12% to +40% and
+  discounts of 10% to 30%. A price that is 5x or 0.03x the candidate rate means
+  the candidate is the wrong service, not that the invoice is wrong.
+
+Return ONLY this JSON. No prose, no markdown fences.
+
+{
+  "matched_service": "<the contract's exact service name, or null>",
+  "confidence": <float 0.0-1.0>,
+  "basis": "<which evidence decided it: meaning | unit_basis | price | combination>",
+  "runner_up": "<the next best candidate name, or null>",
+  "why_not_runner_up": "<one clause, or null>"
+}
+
+Calibrate confidence honestly, and read it as a probability:
+- 0.9+  the clinical meaning matches and the unit basis agrees
+- 0.7   meaning matches, unit basis or price is silent rather than agreeing
+- 0.5   two candidates are plausible and nothing separates them
+- null with low confidence is a valid and useful answer
+
+Returning null costs one unreviewed line. Returning a wrong service silently
+mis-prices every invoice that carries this description, and nobody catches it.
+Prefer null.
+
+--- BILLING LINE ---
+description: {description}
+billed_unit_basis: {unit_basis_as_billed}
+billed_unit_price_cents: {unit_price_cents}
+quantity: {quantity}
+
+--- CANDIDATE SERVICES ---
+{candidates_json}

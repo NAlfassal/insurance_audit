@@ -1,0 +1,36 @@
+You are extracting billing rules from a health insurance service contract.
+
+Read the contract text below and return ONLY the base rate table as JSON.
+No prose, no markdown fences, no commentary.
+
+Schema:
+{
+  "contract_number": "<string exactly as written in the contract>",
+  "services": [
+    {
+      "name": "<the contracted Service name, exactly as the contract writes it>",
+      "unit_basis": "<the unit basis, exactly as written: e.g. 'per night of occupancy', 'per hour', 'per test'>",
+      "rate_cents": <integer, the rate in whole cents; GBP 687.00 -> 68700>
+    }
+  ],
+  "ambiguities": ["<short note for anything you could not resolve>"]
+}
+
+Rules:
+- rate_cents MUST be an integer. Never emit a decimal. GBP 1,701.25 -> 170125.
+- Copy the Service name verbatim. Do not normalise, shorten or re-case it.
+- Extract EVERY service that has a stated base rate, including services whose
+  rate appears inside a prose clause rather than a table.
+- Ignore clauses that do not set a base rate: notices, audit rights,
+  confidentiality, data protection, force majeure, termination, governing law.
+- If a service has more than one rate stated for different periods, emit one
+  entry per period and add a note to "ambiguities" naming that service.
+- If a clause states a premium, discount, cap or exclusion, do NOT put it in
+  "services". Add a short note to "ambiguities" instead. This prompt extracts
+  base rates only.
+- If you cannot determine a rate with confidence, omit the service and record
+  why in "ambiguities". An omission is recoverable; a wrong rate is not.
+
+--- CONTRACT TEXT ---
+{contract_text}
+--- END CONTRACT TEXT ---

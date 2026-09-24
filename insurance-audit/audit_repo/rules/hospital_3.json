@@ -1,0 +1,1287 @@
+{
+  "contract_number": "INS-H3-2024-0562",
+  "term": {
+    "from": "2024-01-01",
+    "to": "2025-12-31"
+  },
+  "services": {
+    "Advanced Dermatologic Nutritional Support": {
+      "unit_basis": "per day of service",
+      "base_rate": {
+        "cents": 86525,
+        "text": "GBP 865.25"
+      },
+      "contracted_from": "2025-01-01"
+    },
+    "Advanced Gastrointestinal Telemetry Monitoring": {
+      "unit_basis": "per day of service",
+      "base_rate": {
+        "cents": 128100,
+        "text": "GBP 1,281.00"
+      },
+      "not_billable_within": [
+        {
+          "days": 7,
+          "of": "Advanced Geriatric Nutritional Support"
+        }
+      ]
+    },
+    "Advanced Geriatric Nutritional Support": {
+      "unit_basis": "per unit dispensed",
+      "base_rate": {
+        "cents": 1250,
+        "text": "GBP 12.50"
+      }
+    },
+    "Advanced Metabolic Discharge Planning": {
+      "unit_basis": "per hour",
+      "base_rate": {
+        "cents": 21075,
+        "text": "GBP 210.75"
+      }
+    },
+    "Advanced Musculoskeletal Radiotherapy Fraction": {
+      "unit_basis": "per procedure",
+      "base_rate": {
+        "cents": 348975,
+        "text": "GBP 3,489.75"
+      }
+    },
+    "Advanced Paediatric Telemetry Monitoring": {
+      "unit_basis": "per day of service",
+      "base_rate": {
+        "cents": 41000,
+        "text": "GBP 410.00"
+      }
+    },
+    "Advanced Rheumatologic Pharmaceutical Dispensing": {
+      "unit_basis": "per item supplied",
+      "base_rate": {
+        "cents": 27875,
+        "text": "GBP 278.75"
+      },
+      "threshold_premium": {
+        "when_daily_quantity_exceeds": 6,
+        "factor": "1.3"
+      }
+    },
+    "Ambulatory Metabolic Isolation Room Occupancy": {
+      "unit_basis": "per day of service",
+      "base_rate": {
+        "cents": 159725,
+        "text": "GBP 1,597.25"
+      },
+      "non_business_day_factor": "1.12"
+    },
+    "Ambulatory Ophthalmic Imaging Interpretation": {
+      "unit_basis": "per procedure",
+      "base_rate": {
+        "cents": 414850,
+        "text": "GBP 4,148.50"
+      },
+      "volume_discounts": [
+        {
+          "when_cumulative_exceeds": 100,
+          "factor": "0.9"
+        }
+      ]
+    },
+    "Ambulatory Otolaryngologic Imaging Interpretation": {
+      "unit_basis": "per procedure",
+      "base_rate": {
+        "cents": 182625,
+        "text": "GBP 1,826.25"
+      },
+      "rate_periods": [
+        {
+          "from": null,
+          "to": "2024-12-31",
+          "rate": {
+            "cents": 182625,
+            "text": "GBP 1,826.25"
+          }
+        },
+        {
+          "from": "2025-01-01",
+          "to": null,
+          "rate": {
+            "cents": 208200,
+            "text": "GBP 2,082.00"
+          }
+        }
+      ],
+      "daily_cap": 12
+    },
+    "Ambulatory Renal Case Conference": {
+      "unit_basis": "per hour",
+      "base_rate": {
+        "cents": 8775,
+        "text": "GBP 87.75"
+      },
+      "threshold_premium": {
+        "when_daily_quantity_exceeds": 8,
+        "factor": "1.25"
+      }
+    },
+    "Assisted Ophthalmic Recovery Room Occupancy": {
+      "unit_basis": "per hour",
+      "base_rate": {
+        "cents": 8775,
+        "text": "GBP 87.75"
+      }
+    },
+    "Assisted Paediatric Dialysis Session": {
+      "unit_basis": "per procedure",
+      "base_rate": {
+        "cents": 372800,
+        "text": "GBP 3,728.00"
+      },
+      "daily_cap": 12
+    },
+    "Assisted Urologic Endoscopic Procedure": {
+      "unit_basis": "per procedure",
+      "base_rate": {
+        "cents": 94250,
+        "text": "GBP 942.50"
+      },
+      "rate_periods": [
+        {
+          "from": null,
+          "to": "2024-12-31",
+          "rate": {
+            "cents": 94250,
+            "text": "GBP 942.50"
+          }
+        },
+        {
+          "from": "2025-01-01",
+          "to": null,
+          "rate": {
+            "cents": 111225,
+            "text": "GBP 1,112.25"
+          }
+        }
+      ],
+      "volume_discounts": [
+        {
+          "when_cumulative_exceeds": 100,
+          "factor": "0.9"
+        },
+        {
+          "when_cumulative_exceeds": 300,
+          "factor": "0.8"
+        }
+      ]
+    },
+    "Bedside Cardiac Recovery Room Occupancy": {
+      "unit_basis": "per night of occupancy",
+      "base_rate": {
+        "cents": 167750,
+        "text": "GBP 1,677.50"
+      },
+      "not_billable_within": [
+        {
+          "days": 14,
+          "of": "Specialist Dermatologic Infusion Therapy"
+        }
+      ]
+    },
+    "Bedside Geriatric Telemetry Monitoring": {
+      "unit_basis": "per day of service",
+      "base_rate": {
+        "cents": 131100,
+        "text": "GBP 1,311.00"
+      }
+    },
+    "Bedside Metabolic Infusion Therapy": {
+      "unit_basis": "per unit dispensed",
+      "base_rate": {
+        "cents": 1850,
+        "text": "GBP 18.50"
+      },
+      "threshold_premium": {
+        "when_daily_quantity_exceeds": 12,
+        "factor": "1.4"
+      }
+    },
+    "Bedside Neurological Pharmaceutical Dispensing": {
+      "unit_basis": "per item supplied",
+      "base_rate": {
+        "cents": 9675,
+        "text": "GBP 96.75"
+      }
+    },
+    "Bedside Neurological Radiotherapy Fraction": {
+      "unit_basis": "per item supplied",
+      "base_rate": {
+        "cents": 2575,
+        "text": "GBP 25.75"
+      },
+      "rate_periods": [
+        {
+          "from": null,
+          "to": "2024-12-31",
+          "rate": {
+            "cents": 2575,
+            "text": "GBP 25.75"
+          }
+        },
+        {
+          "from": "2025-01-01",
+          "to": null,
+          "rate": {
+            "cents": 3050,
+            "text": "GBP 30.50"
+          }
+        }
+      ],
+      "not_billable_within": [
+        {
+          "days": 7,
+          "of": "Postoperative Geriatric Nutritional Support"
+        }
+      ]
+    },
+    "Bedside Oncology Case Conference": {
+      "unit_basis": "per hour",
+      "base_rate": {
+        "cents": 11400,
+        "text": "GBP 114.00"
+      }
+    },
+    "Bedside Palliative Wound Care": {
+      "unit_basis": "per visit",
+      "base_rate": {
+        "cents": 14150,
+        "text": "GBP 141.50"
+      },
+      "bundle": {
+        "with": "Intermittent Gastrointestinal Endoscopic Procedure",
+        "rate": {
+          "cents": 12025,
+          "text": "GBP 120.25"
+        }
+      }
+    },
+    "Bedside Pulmonary Sterilisation Service": {
+      "unit_basis": "per procedure",
+      "base_rate": {
+        "cents": 381825,
+        "text": "GBP 3,818.25"
+      }
+    },
+    "Bedside Renal Imaging Interpretation": {
+      "unit_basis": "per test",
+      "base_rate": {
+        "cents": 59250,
+        "text": "GBP 592.50"
+      }
+    },
+    "Bedside Urologic Laboratory Panel": {
+      "unit_basis": "per item supplied",
+      "base_rate": {
+        "cents": 2000,
+        "text": "GBP 20.00"
+      },
+      "volume_discounts": [
+        {
+          "when_cumulative_exceeds": 80,
+          "factor": "0.9"
+        },
+        {
+          "when_cumulative_exceeds": 240,
+          "factor": "0.8"
+        }
+      ]
+    },
+    "Bedside Urologic Ventilation Support": {
+      "unit_basis": "per day of service",
+      "base_rate": {
+        "cents": 168975,
+        "text": "GBP 1,689.75"
+      },
+      "volume_discounts": [
+        {
+          "when_cumulative_exceeds": 80,
+          "factor": "0.88"
+        },
+        {
+          "when_cumulative_exceeds": 240,
+          "factor": "0.7"
+        }
+      ]
+    },
+    "Bedside Vascular Critical Care Occupancy": {
+      "unit_basis": "per day of service",
+      "base_rate": {
+        "cents": 144425,
+        "text": "GBP 1,444.25"
+      },
+      "daily_cap": 8
+    },
+    "Comprehensive Haematology Radiotherapy Fraction": {
+      "unit_basis": "per procedure",
+      "base_rate": {
+        "cents": 156925,
+        "text": "GBP 1,569.25"
+      }
+    },
+    "Comprehensive Orthopaedic Wound Care": {
+      "unit_basis": "per item supplied",
+      "base_rate": {
+        "cents": 16600,
+        "text": "GBP 166.00"
+      }
+    },
+    "Comprehensive Palliative Diagnostic Imaging": {
+      "unit_basis": "per procedure",
+      "base_rate": {
+        "cents": 163525,
+        "text": "GBP 1,635.25"
+      }
+    },
+    "Continuous Gastrointestinal Laboratory Panel": {
+      "unit_basis": "per test",
+      "base_rate": {
+        "cents": 56000,
+        "text": "GBP 560.00"
+      }
+    },
+    "Continuous Immunologic Critical Care Occupancy": {
+      "unit_basis": "per hour",
+      "base_rate": {
+        "cents": 20725,
+        "text": "GBP 207.25"
+      },
+      "bundle": {
+        "with": "Specialist Ophthalmic Nutritional Support",
+        "rate": {
+          "cents": 15550,
+          "text": "GBP 155.50"
+        }
+      }
+    },
+    "Continuous Immunologic Isolation Room Occupancy": {
+      "unit_basis": "per day of service",
+      "base_rate": {
+        "cents": 116275,
+        "text": "GBP 1,162.75"
+      },
+      "daily_cap": 24
+    },
+    "Continuous Pulmonary Wound Care": {
+      "unit_basis": "per item supplied",
+      "base_rate": {
+        "cents": 27625,
+        "text": "GBP 276.25"
+      }
+    },
+    "Continuous Renal Isolation Room Occupancy": {
+      "unit_basis": "per day of service",
+      "base_rate": {
+        "cents": 50125,
+        "text": "GBP 501.25"
+      },
+      "non_business_day_factor": "1.1"
+    },
+    "Elective Palliative Physiotherapy Session": {
+      "unit_basis": "per hour",
+      "base_rate": {
+        "cents": 18800,
+        "text": "GBP 188.00"
+      },
+      "volume_discounts": [
+        {
+          "when_cumulative_exceeds": 60,
+          "factor": "0.9"
+        },
+        {
+          "when_cumulative_exceeds": 180,
+          "factor": "0.8"
+        }
+      ]
+    },
+    "Elective Pulmonary Consultation": {
+      "unit_basis": "per procedure",
+      "base_rate": {
+        "cents": 399025,
+        "text": "GBP 3,990.25"
+      },
+      "bundle": {
+        "with": "Focused Neurological Physiotherapy Session",
+        "rate": {
+          "cents": 351150,
+          "text": "GBP 3,511.50"
+        }
+      }
+    },
+    "Elective Pulmonary Imaging Interpretation": {
+      "unit_basis": "per procedure",
+      "base_rate": {
+        "cents": 456000,
+        "text": "GBP 4,560.00"
+      },
+      "contracted_from": "2025-01-01"
+    },
+    "Emergency Dermatologic Sterilisation Service": {
+      "unit_basis": "per item supplied",
+      "base_rate": {
+        "cents": 23025,
+        "text": "GBP 230.25"
+      },
+      "threshold_premium": {
+        "when_daily_quantity_exceeds": 10,
+        "factor": "1.4"
+      }
+    },
+    "Emergency Oncology Biopsy Procedure": {
+      "unit_basis": "per item supplied",
+      "base_rate": {
+        "cents": 20375,
+        "text": "GBP 203.75"
+      },
+      "threshold_premium": {
+        "when_daily_quantity_exceeds": 6,
+        "factor": "1.3"
+      }
+    },
+    "Emergency Pulmonary Biopsy Procedure": {
+      "unit_basis": "per item supplied",
+      "base_rate": {
+        "cents": 26350,
+        "text": "GBP 263.50"
+      }
+    },
+    "Emergency Renal Isolation Room Occupancy": {
+      "unit_basis": "per night of occupancy",
+      "base_rate": {
+        "cents": 49050,
+        "text": "GBP 490.50"
+      }
+    },
+    "Emergency Vascular Biopsy Procedure": {
+      "unit_basis": "per procedure",
+      "base_rate": {
+        "cents": 215625,
+        "text": "GBP 2,156.25"
+      },
+      "not_billable_within": [
+        {
+          "days": 30,
+          "of": "Preoperative Endocrine Dialysis Session"
+        }
+      ]
+    },
+    "Extended Dermatologic Infusion Therapy": {
+      "unit_basis": "per unit dispensed",
+      "base_rate": {
+        "cents": 3475,
+        "text": "GBP 34.75"
+      }
+    },
+    "Extended Dermatologic Sterilisation Service": {
+      "unit_basis": "per procedure",
+      "base_rate": {
+        "cents": 161525,
+        "text": "GBP 1,615.25"
+      }
+    },
+    "Extended Geriatric Infusion Therapy": {
+      "unit_basis": "per unit dispensed",
+      "base_rate": {
+        "cents": 6100,
+        "text": "GBP 61.00"
+      },
+      "not_billable_within": [
+        {
+          "days": 14,
+          "of": "Inpatient Obstetric Wound Care"
+        }
+      ]
+    },
+    "Extended Haematology Radiotherapy Fraction": {
+      "unit_basis": "per item supplied",
+      "base_rate": {
+        "cents": 27575,
+        "text": "GBP 275.75"
+      },
+      "non_business_day_factor": "1.15"
+    },
+    "Extended Infectious Telemetry Monitoring": {
+      "unit_basis": "per day of service",
+      "base_rate": {
+        "cents": 82675,
+        "text": "GBP 826.75"
+      },
+      "volume_discounts": [
+        {
+          "when_cumulative_exceeds": 100,
+          "factor": "0.88"
+        },
+        {
+          "when_cumulative_exceeds": 300,
+          "factor": "0.75"
+        }
+      ]
+    },
+    "Extended Musculoskeletal Endoscopic Procedure": {
+      "unit_basis": "per procedure",
+      "base_rate": {
+        "cents": 442975,
+        "text": "GBP 4,429.75"
+      },
+      "bundle": {
+        "with": "Focused Obstetric Nutritional Support",
+        "rate": {
+          "cents": 363250,
+          "text": "GBP 3,632.50"
+        }
+      }
+    },
+    "Extended Neurological Theatre Time": {
+      "unit_basis": "per hour",
+      "base_rate": {
+        "cents": 3700,
+        "text": "GBP 37.00"
+      }
+    },
+    "Focused Metabolic Theatre Time": {
+      "unit_basis": "per hour",
+      "base_rate": {
+        "cents": 4200,
+        "text": "GBP 42.00"
+      },
+      "daily_cap": 12
+    },
+    "Focused Neurological Physiotherapy Session": {
+      "unit_basis": "per visit",
+      "base_rate": {
+        "cents": 11125,
+        "text": "GBP 111.25"
+      },
+      "bundle": {
+        "with": "Elective Pulmonary Consultation",
+        "rate": {
+          "cents": 9800,
+          "text": "GBP 98.00"
+        }
+      }
+    },
+    "Focused Obstetric Nutritional Support": {
+      "unit_basis": "per unit dispensed",
+      "base_rate": {
+        "cents": 6925,
+        "text": "GBP 69.25"
+      },
+      "bundle": {
+        "with": "Extended Musculoskeletal Endoscopic Procedure",
+        "rate": {
+          "cents": 5675,
+          "text": "GBP 56.75"
+        }
+      }
+    },
+    "Focused Urologic Telemetry Monitoring": {
+      "unit_basis": "per hour, per item",
+      "base_rate": {
+        "cents": 5225,
+        "text": "GBP 52.25"
+      }
+    },
+    "Inpatient Gastrointestinal Pharmaceutical Dispensing": {
+      "unit_basis": "per item supplied",
+      "base_rate": {
+        "cents": 23550,
+        "text": "GBP 235.50"
+      },
+      "daily_cap": 12
+    },
+    "Inpatient Haematology Imaging Interpretation": {
+      "unit_basis": "per procedure",
+      "base_rate": {
+        "cents": 123075,
+        "text": "GBP 1,230.75"
+      }
+    },
+    "Inpatient Hepatic Biopsy Procedure": {
+      "unit_basis": "per item supplied",
+      "base_rate": {
+        "cents": 3650,
+        "text": "GBP 36.50"
+      },
+      "bundle": {
+        "with": "Specialist Gastrointestinal Specimen Analysis",
+        "rate": {
+          "cents": 2925,
+          "text": "GBP 29.25"
+        }
+      }
+    },
+    "Inpatient Infectious Specimen Analysis": {
+      "unit_basis": "per test",
+      "base_rate": {
+        "cents": 34775,
+        "text": "GBP 347.75"
+      },
+      "volume_discounts": [
+        {
+          "when_cumulative_exceeds": 80,
+          "factor": "0.85"
+        },
+        {
+          "when_cumulative_exceeds": 240,
+          "factor": "0.75"
+        }
+      ]
+    },
+    "Inpatient Metabolic Infusion Therapy": {
+      "unit_basis": "per hour",
+      "base_rate": {
+        "cents": 14850,
+        "text": "GBP 148.50"
+      },
+      "threshold_premium": {
+        "when_daily_quantity_exceeds": 16,
+        "factor": "1.4"
+      }
+    },
+    "Inpatient Metabolic Theatre Time": {
+      "unit_basis": "per hour",
+      "base_rate": {
+        "cents": 21000,
+        "text": "GBP 210.00"
+      },
+      "daily_cap": 12
+    },
+    "Inpatient Musculoskeletal Theatre Time": {
+      "unit_basis": "per hour",
+      "base_rate": {
+        "cents": 9250,
+        "text": "GBP 92.50"
+      },
+      "not_billable_within": [
+        {
+          "days": 21,
+          "of": "Intermittent Infectious Theatre Time"
+        }
+      ]
+    },
+    "Inpatient Obstetric Diagnostic Imaging": {
+      "unit_basis": "per procedure",
+      "base_rate": {
+        "cents": 327325,
+        "text": "GBP 3,273.25"
+      },
+      "daily_cap": 8
+    },
+    "Inpatient Obstetric Wound Care": {
+      "unit_basis": "per visit",
+      "base_rate": {
+        "cents": 34175,
+        "text": "GBP 341.75"
+      }
+    },
+    "Intensive Immunologic Wound Care": {
+      "unit_basis": "per item supplied",
+      "base_rate": {
+        "cents": 13275,
+        "text": "GBP 132.75"
+      }
+    },
+    "Intensive Infectious Anaesthesia Administration": {
+      "unit_basis": "per procedure",
+      "base_rate": {
+        "cents": 294675,
+        "text": "GBP 2,946.75"
+      },
+      "rate_periods": [
+        {
+          "from": null,
+          "to": "2024-12-31",
+          "rate": {
+            "cents": 294675,
+            "text": "GBP 2,946.75"
+          }
+        },
+        {
+          "from": "2025-01-01",
+          "to": null,
+          "rate": {
+            "cents": 312350,
+            "text": "GBP 3,123.50"
+          }
+        }
+      ],
+      "daily_cap": 4
+    },
+    "Intensive Oncology Nutritional Support": {
+      "unit_basis": "per day of service",
+      "base_rate": {
+        "cents": 62675,
+        "text": "GBP 626.75"
+      },
+      "non_business_day_factor": "1.25"
+    },
+    "Intensive Ophthalmic Laboratory Panel": {
+      "unit_basis": "per test",
+      "base_rate": {
+        "cents": 41825,
+        "text": "GBP 418.25"
+      },
+      "rate_periods": [
+        {
+          "from": null,
+          "to": "2024-12-31",
+          "rate": {
+            "cents": 41825,
+            "text": "GBP 418.25"
+          }
+        },
+        {
+          "from": "2025-01-01",
+          "to": null,
+          "rate": {
+            "cents": 39725,
+            "text": "GBP 397.25"
+          }
+        }
+      ],
+      "not_billable_within": [
+        {
+          "days": 30,
+          "of": "Assisted Ophthalmic Recovery Room Occupancy"
+        }
+      ]
+    },
+    "Intensive Otolaryngologic Anaesthesia Administration": {
+      "unit_basis": "per procedure",
+      "base_rate": {
+        "cents": 68025,
+        "text": "GBP 680.25"
+      },
+      "rate_periods": [
+        {
+          "from": null,
+          "to": "2024-12-31",
+          "rate": {
+            "cents": 68025,
+            "text": "GBP 680.25"
+          }
+        },
+        {
+          "from": "2025-01-01",
+          "to": null,
+          "rate": {
+            "cents": 80275,
+            "text": "GBP 802.75"
+          }
+        }
+      ],
+      "volume_discounts": [
+        {
+          "when_cumulative_exceeds": 60,
+          "factor": "0.88"
+        }
+      ]
+    },
+    "Intensive Paediatric Biopsy Procedure": {
+      "unit_basis": "per procedure",
+      "base_rate": {
+        "cents": 399700,
+        "text": "GBP 3,997.00"
+      }
+    },
+    "Intermittent Dermatologic Physiotherapy Session": {
+      "unit_basis": "per visit",
+      "base_rate": {
+        "cents": 35175,
+        "text": "GBP 351.75"
+      },
+      "volume_discounts": [
+        {
+          "when_cumulative_exceeds": 60,
+          "factor": "0.88"
+        },
+        {
+          "when_cumulative_exceeds": 180,
+          "factor": "0.7"
+        }
+      ]
+    },
+    "Intermittent Gastrointestinal Endoscopic Procedure": {
+      "unit_basis": "per procedure",
+      "base_rate": {
+        "cents": 276475,
+        "text": "GBP 2,764.75"
+      },
+      "bundle": {
+        "with": "Bedside Palliative Wound Care",
+        "rate": {
+          "cents": 235000,
+          "text": "GBP 2,350.00"
+        }
+      }
+    },
+    "Intermittent Immunologic Isolation Room Occupancy": {
+      "unit_basis": "per night of occupancy",
+      "base_rate": {
+        "cents": 110525,
+        "text": "GBP 1,105.25"
+      }
+    },
+    "Intermittent Infectious Theatre Time": {
+      "unit_basis": "per hour",
+      "base_rate": {
+        "cents": 13900,
+        "text": "GBP 139.00"
+      }
+    },
+    "Intermittent Otolaryngologic Wound Care": {
+      "unit_basis": "per visit",
+      "base_rate": {
+        "cents": 28500,
+        "text": "GBP 285.00"
+      }
+    },
+    "Outpatient Gastrointestinal Isolation Room Occupancy": {
+      "unit_basis": "per day of service",
+      "base_rate": {
+        "cents": 57050,
+        "text": "GBP 570.50"
+      }
+    },
+    "Outpatient Haematology Transport Service": {
+      "unit_basis": "per item supplied",
+      "base_rate": {
+        "cents": 13375,
+        "text": "GBP 133.75"
+      },
+      "not_billable_within": [
+        {
+          "days": 30,
+          "of": "Inpatient Obstetric Wound Care"
+        }
+      ]
+    },
+    "Outpatient Infectious Anaesthesia Administration": {
+      "unit_basis": "per hour",
+      "base_rate": {
+        "cents": 11950,
+        "text": "GBP 119.50"
+      }
+    },
+    "Outpatient Metabolic Rehabilitation Programme": {
+      "unit_basis": "per visit",
+      "base_rate": {
+        "cents": 18975,
+        "text": "GBP 189.75"
+      }
+    },
+    "Outpatient Pulmonary Transport Service": {
+      "unit_basis": "per visit",
+      "base_rate": {
+        "cents": 18125,
+        "text": "GBP 181.25"
+      },
+      "threshold_premium": {
+        "when_daily_quantity_exceeds": 12,
+        "factor": "1.4"
+      }
+    },
+    "Outpatient Renal Specimen Analysis": {
+      "unit_basis": "per item supplied",
+      "base_rate": {
+        "cents": 20700,
+        "text": "GBP 207.00"
+      },
+      "volume_discounts": [
+        {
+          "when_cumulative_exceeds": 60,
+          "factor": "0.85"
+        }
+      ]
+    },
+    "Outpatient Rheumatologic Pharmaceutical Dispensing": {
+      "unit_basis": "per unit dispensed",
+      "base_rate": {
+        "cents": 8050,
+        "text": "GBP 80.50"
+      },
+      "threshold_premium": {
+        "when_daily_quantity_exceeds": 10,
+        "factor": "1.4"
+      }
+    },
+    "Postoperative Cardiac Ward Bed Occupancy": {
+      "unit_basis": "per day of service",
+      "base_rate": {
+        "cents": 134325,
+        "text": "GBP 1,343.25"
+      },
+      "volume_discounts": [
+        {
+          "when_cumulative_exceeds": 100,
+          "factor": "0.85"
+        }
+      ]
+    },
+    "Postoperative Dermatologic Physiotherapy Session": {
+      "unit_basis": "per hour",
+      "base_rate": {
+        "cents": 20200,
+        "text": "GBP 202.00"
+      },
+      "daily_cap": 4
+    },
+    "Postoperative Geriatric Nutritional Support": {
+      "unit_basis": "per day of service",
+      "base_rate": {
+        "cents": 108675,
+        "text": "GBP 1,086.75"
+      }
+    },
+    "Postoperative Haematology Nursing Observation": {
+      "unit_basis": "per day of service",
+      "base_rate": {
+        "cents": 140975,
+        "text": "GBP 1,409.75"
+      },
+      "threshold_premium": {
+        "when_daily_quantity_exceeds": 8,
+        "factor": "1.2"
+      }
+    },
+    "Postoperative Neurological Diagnostic Imaging": {
+      "unit_basis": "per test",
+      "base_rate": {
+        "cents": 53550,
+        "text": "GBP 535.50"
+      }
+    },
+    "Postoperative Otolaryngologic Laboratory Panel": {
+      "unit_basis": "per item supplied",
+      "base_rate": {
+        "cents": 24475,
+        "text": "GBP 244.75"
+      }
+    },
+    "Postoperative Otolaryngologic Rehabilitation Programme": {
+      "unit_basis": "per day of service",
+      "base_rate": {
+        "cents": 147875,
+        "text": "GBP 1,478.75"
+      },
+      "non_business_day_factor": "1.1"
+    },
+    "Postoperative Psychiatric Endoscopic Procedure": {
+      "unit_basis": "per procedure",
+      "base_rate": {
+        "cents": 368575,
+        "text": "GBP 3,685.75"
+      }
+    },
+    "Postoperative Pulmonary Consultation": {
+      "unit_basis": "per visit",
+      "base_rate": {
+        "cents": 26750,
+        "text": "GBP 267.50"
+      },
+      "non_business_day_factor": "1.25"
+    },
+    "Postoperative Rheumatologic Anaesthesia Administration": {
+      "unit_basis": "per hour",
+      "base_rate": {
+        "cents": 8725,
+        "text": "GBP 87.25"
+      },
+      "non_business_day_factor": "1.2"
+    },
+    "Preoperative Cardiac Discharge Planning": {
+      "unit_basis": "per hour",
+      "base_rate": {
+        "cents": 5675,
+        "text": "GBP 56.75"
+      },
+      "not_billable_within": [
+        {
+          "days": 30,
+          "of": "Extended Dermatologic Infusion Therapy"
+        }
+      ]
+    },
+    "Preoperative Dermatologic Dialysis Session": {
+      "unit_basis": "per procedure",
+      "base_rate": {
+        "cents": 439850,
+        "text": "GBP 4,398.50"
+      },
+      "not_billable_within": [
+        {
+          "days": 10,
+          "of": "Outpatient Gastrointestinal Isolation Room Occupancy"
+        }
+      ]
+    },
+    "Preoperative Endocrine Dialysis Session": {
+      "unit_basis": "per procedure",
+      "base_rate": {
+        "cents": 400300,
+        "text": "GBP 4,003.00"
+      }
+    },
+    "Preoperative Gastrointestinal Radiotherapy Fraction": {
+      "unit_basis": "per item supplied",
+      "base_rate": {
+        "cents": 26025,
+        "text": "GBP 260.25"
+      },
+      "non_business_day_factor": "1.2"
+    },
+    "Preoperative Ophthalmic Imaging Interpretation": {
+      "unit_basis": "per test",
+      "base_rate": {
+        "cents": 23275,
+        "text": "GBP 232.75"
+      },
+      "threshold_premium": {
+        "when_daily_quantity_exceeds": 16,
+        "factor": "1.4"
+      }
+    },
+    "Preoperative Paediatric Laboratory Panel": {
+      "unit_basis": "per test",
+      "base_rate": {
+        "cents": 44500,
+        "text": "GBP 445.00"
+      }
+    },
+    "Preoperative Psychiatric Home Visit": {
+      "unit_basis": "per visit",
+      "base_rate": {
+        "cents": 32825,
+        "text": "GBP 328.25"
+      },
+      "non_business_day_factor": "1.15"
+    },
+    "Preoperative Psychiatric Radiotherapy Fraction": {
+      "unit_basis": "per item supplied",
+      "base_rate": {
+        "cents": 3450,
+        "text": "GBP 34.50"
+      },
+      "daily_cap": 4
+    },
+    "Preoperative Rheumatologic Transport Service": {
+      "unit_basis": "per item supplied",
+      "base_rate": {
+        "cents": 15075,
+        "text": "GBP 150.75"
+      }
+    },
+    "Routine Endocrine Specimen Analysis": {
+      "unit_basis": "per item supplied",
+      "base_rate": {
+        "cents": 8725,
+        "text": "GBP 87.25"
+      }
+    },
+    "Routine Obstetric Diagnostic Imaging": {
+      "unit_basis": "per item supplied",
+      "base_rate": {
+        "cents": 26375,
+        "text": "GBP 263.75"
+      },
+      "non_business_day_factor": "1.1"
+    },
+    "Routine Psychiatric Consultation": {
+      "unit_basis": "per procedure",
+      "base_rate": {
+        "cents": 282975,
+        "text": "GBP 2,829.75"
+      },
+      "daily_cap": 8
+    },
+    "Routine Vascular Rehabilitation Programme": {
+      "unit_basis": "per visit",
+      "base_rate": {
+        "cents": 37575,
+        "text": "GBP 375.75"
+      },
+      "non_business_day_factor": "1.1"
+    },
+    "Specialist Dermatologic Infusion Therapy": {
+      "unit_basis": "per hour",
+      "base_rate": {
+        "cents": 17400,
+        "text": "GBP 174.00"
+      }
+    },
+    "Specialist Gastrointestinal Specimen Analysis": {
+      "unit_basis": "per test",
+      "base_rate": {
+        "cents": 52850,
+        "text": "GBP 528.50"
+      },
+      "bundle": {
+        "with": "Inpatient Hepatic Biopsy Procedure",
+        "rate": {
+          "cents": 42275,
+          "text": "GBP 422.75"
+        }
+      }
+    },
+    "Specialist Haematology Endoscopic Procedure": {
+      "unit_basis": "per procedure",
+      "base_rate": {
+        "cents": 101900,
+        "text": "GBP 1,019.00"
+      },
+      "threshold_premium": {
+        "when_daily_quantity_exceeds": 12,
+        "factor": "1.15"
+      }
+    },
+    "Specialist Hepatic Case Conference": {
+      "unit_basis": "per visit",
+      "base_rate": {
+        "cents": 35275,
+        "text": "GBP 352.75"
+      }
+    },
+    "Specialist Obstetric Dialysis Session": {
+      "unit_basis": "per procedure",
+      "base_rate": {
+        "cents": 62925,
+        "text": "GBP 629.25"
+      }
+    },
+    "Specialist Ophthalmic Nutritional Support": {
+      "unit_basis": "per day of service",
+      "base_rate": {
+        "cents": 32475,
+        "text": "GBP 324.75"
+      },
+      "bundle": {
+        "with": "Continuous Immunologic Critical Care Occupancy",
+        "rate": {
+          "cents": 24350,
+          "text": "GBP 243.50"
+        }
+      }
+    },
+    "Specialist Paediatric Biopsy Procedure": {
+      "unit_basis": "per item supplied",
+      "base_rate": {
+        "cents": 14225,
+        "text": "GBP 142.25"
+      },
+      "threshold_premium": {
+        "when_daily_quantity_exceeds": 8,
+        "factor": "1.15"
+      }
+    },
+    "Specialist Psychiatric Discharge Planning": {
+      "unit_basis": "per visit",
+      "base_rate": {
+        "cents": 38650,
+        "text": "GBP 386.50"
+      },
+      "rate_periods": [
+        {
+          "from": null,
+          "to": "2024-12-31",
+          "rate": {
+            "cents": 38650,
+            "text": "GBP 386.50"
+          }
+        },
+        {
+          "from": "2025-01-01",
+          "to": null,
+          "rate": {
+            "cents": 44050,
+            "text": "GBP 440.50"
+          }
+        }
+      ],
+      "non_business_day_factor": "1.1"
+    },
+    "Specialist Pulmonary Biopsy Procedure": {
+      "unit_basis": "per procedure",
+      "base_rate": {
+        "cents": 385550,
+        "text": "GBP 3,855.50"
+      }
+    },
+    "Specialist Pulmonary Physiotherapy Session": {
+      "unit_basis": "per hour",
+      "base_rate": {
+        "cents": 12500,
+        "text": "GBP 125.00"
+      }
+    },
+    "Standard Orthopaedic Theatre Time": {
+      "unit_basis": "per hour",
+      "base_rate": {
+        "cents": 6025,
+        "text": "GBP 60.25"
+      }
+    },
+    "Standard Otolaryngologic Discharge Planning": {
+      "unit_basis": "per visit",
+      "base_rate": {
+        "cents": 30600,
+        "text": "GBP 306.00"
+      }
+    },
+    "Standard Rheumatologic Imaging Interpretation": {
+      "unit_basis": "per procedure",
+      "base_rate": {
+        "cents": 383550,
+        "text": "GBP 3,835.50"
+      },
+      "threshold_premium": {
+        "when_daily_quantity_exceeds": 8,
+        "factor": "1.25"
+      }
+    },
+    "Supervised Hepatic Sterilisation Service": {
+      "unit_basis": "per item supplied",
+      "base_rate": {
+        "cents": 26625,
+        "text": "GBP 266.25"
+      },
+      "volume_discounts": [
+        {
+          "when_cumulative_exceeds": 80,
+          "factor": "0.9"
+        }
+      ]
+    },
+    "Supervised Neurological Laboratory Panel": {
+      "unit_basis": "per item supplied",
+      "base_rate": {
+        "cents": 23125,
+        "text": "GBP 231.25"
+      }
+    },
+    "Supervised Ophthalmic Nutritional Support": {
+      "unit_basis": "per unit dispensed",
+      "base_rate": {
+        "cents": 5950,
+        "text": "GBP 59.50"
+      },
+      "threshold_premium": {
+        "when_daily_quantity_exceeds": 16,
+        "factor": "1.2"
+      }
+    },
+    "Supervised Otolaryngologic Wound Care": {
+      "unit_basis": "per item supplied",
+      "base_rate": {
+        "cents": 24025,
+        "text": "GBP 240.25"
+      }
+    }
+  }
+}
