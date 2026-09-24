@@ -28,7 +28,7 @@ One is still useful; one turned out to be unnecessary.
 A model reads the contract text independently and returns the base-rate table.
 The cross-check lists every service where it disagrees with the regex parser.
 It is optional and was not needed to produce the submission; it is the second
-reader I would run next (write-up, day 5).
+reader I would run next (write-up, next steps).
 
 Design decisions:
 - **One entry per rate period, not per service.** hospital_3 reprices mid-term
