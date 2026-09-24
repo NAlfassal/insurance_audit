@@ -13,7 +13,7 @@ verdict per invoice with a calibrated confidence.
 | Brier — flag · flag and total | 0.0017 · 0.0026 |
  
 **Without labels** — the submission covers hospitals 2–5, which have none, so
-extraction is checked two other ways:
+extraction is checked three other ways:
  
 - every parsed rate appears verbatim in its contract, and every rule sentence
   or table row became exactly one rule, or the run stops
@@ -163,8 +163,7 @@ Tiered by the evidence behind each row:
  
 Every tier scores 1.000 on the dev set, but the rules were developed there, so
 each sits below 1 in proportion to how much it relies on what was tuned on
-hospital_1. Line
-findings sit lowest: they rest on matching and on conventions settled against
+hospital_1. Line findings sit lowest: they rest on matching and on conventions settled against
 the hospital_1 labels, and on hospitals 2–5 they are checked only by price
 agreement and planted errors, not by labels.
  
